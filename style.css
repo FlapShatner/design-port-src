@@ -79,6 +79,7 @@ body {
   
   text-rendering: optimizeSpeed;
   line-height: 1.5;
+  font-family: var(--ff-primary);
 }
 
 /* A elements that don't have a class get default styles */
@@ -114,3 +115,87 @@ svg {
 
 /* Utility Classes */
 
+.center-text{
+    text-align: center;
+}
+
+.clr-black{
+    background-color:var(--clr-black);
+}
+.clr-purple{
+    background-color:var(--clr-purple);
+}
+.clr-gold{
+    background-color:var(--clr-gold);
+}
+.clr-pink{
+    background-color:var(--clr-pink);
+}
+.clr-orange{
+    background-color:var(--clr-orange);
+}
+.clr-green{
+    background-color:var(--clr-green);
+}
+.clr-dark-purple{
+    background-color:var(--clr-dark-purple);
+}
+.clr-gray{
+    background-color:var(--clr-gray);
+}
+.clr-neutral{
+    background-color:var(--clr-neutral);
+}
+
+
+/* Styles */
+
+body{
+    background-color: var(--clr-neutral);
+}
+
+.container{
+    max-width:1111px;
+    margin: 0 auto;
+}
+
+p{
+    font-size: var(--fs-body);
+    font-weight: var(--fw-regular);
+    color:var(--clr-gray);
+}
+
+button{
+    color:var(--clr-neutral);
+    font-size: var(--fs-button);
+    width:14.25rem;
+    height:3.5rem;
+    border-radius:1.75rem;
+    border:none;
+}
+
+/* Header */
+
+header .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top:34px ; 
+}
+
+
+/* Main */
+
+/* Heading */
+
+h1{
+    font-size: var(--fs-h1);
+    font-weight: var(--fw-bold);
+    color:var(--clr-black);
+    margin: 70px 0 1.25rem;
+    text-align: center;
+}
+ .heading p{
+    text-align: center;
+    padding: 0 13rem;
+ }
