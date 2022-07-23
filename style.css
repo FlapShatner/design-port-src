@@ -155,8 +155,9 @@ body{
 }
 
 .container{
-    max-width:1111px;
+    max-width:1440px;
     margin: 0 auto;
+    padding-inline:10.25rem;
 }
 
 p{
@@ -199,3 +200,90 @@ h1{
     text-align: center;
     padding: 0 13rem;
  }
+
+ /* Grid */
+
+ .item{
+    display: flex;
+    flex-direction: column;
+    justify-content:  space-between;
+    border-radius: .5rem;
+    padding: 1.5rem;   
+ }
+
+ .item span{
+    
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-accent);
+    color: var(--clr-neutral);
+ }
+
+ .pattern{
+    display: flex;
+    width: max-content;
+    align-self: flex-end;
+ }
+ 
+ .item-a{
+    grid-area: graphic;
+ }
+
+ .item-b{
+    grid-area: ui;
+ }
+
+ .item-c{
+    grid-area: apps;
+ }
+
+ .item-d{
+    grid-area: illus;
+ }
+ .item-e{
+     grid-area: photo;
+ }
+
+ .item-f{
+    grid-area: motion;
+ }
+
+ .blocks{
+    padding-block:5rem;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 182px 182px;
+    grid-template-areas: 
+        'graphic graphic ui apps photo photo'
+        'graphic graphic illus illus motion motion'
+    ;
+    gap:1.5rem;
+ }
+
+ /* Banner */
+
+ .banner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ }
+
+ .photo{
+    max-width: 445px;
+ }
+
+ .banner-body{
+    max-width: 50%;
+ }
+
+ .banner-body h2{
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-h2);
+    line-height: 3.25rem;
+    padding-block:.25rem;    
+ }
+
+ .banner-body p{
+    padding-block: 2.5rem;
+ }
+
+ 
