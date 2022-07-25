@@ -265,6 +265,8 @@ h1{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-top: 3.5rem;
+    padding-bottom: 4rem;
  }
 
  .photo{
