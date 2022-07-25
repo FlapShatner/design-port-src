@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700&display=swap');
 
+
 :root{
     --clr-purple:hsl(252, 66%, 62%);
     --clr-gold: hsl(28, 89%, 67%);
@@ -173,6 +174,15 @@ button{
     height:3.5rem;
     border-radius:1.75rem;
     border:none;
+    cursor: pointer;
+}
+
+.hov-purple:hover{
+    background-color: var(--clr-purple);
+}
+
+.hov-gold:hover{
+    background-color: var(--clr-gold);
 }
 
 /* Header */
@@ -266,7 +276,7 @@ h1{
     align-items: center;
     justify-content: space-between;
     padding-top: 3.5rem;
-    padding-bottom: 4rem;
+    padding-bottom: 5.5rem;
  }
 
  .photo{
@@ -288,4 +298,75 @@ h1{
     padding-block: 2.5rem;
  }
 
- 
+ /* Slider */
+
+ .track{
+    padding-block:3rem ;
+    max-width: 1440px;
+    margin: 0 auto;
+ }
+
+ .track li,
+ .slide{
+    border-radius: 10px;
+ }
+
+ .controls{
+    text-align: center;
+   
+ }
+
+ button.slider-btn{
+    background-color: var(--clr-black);
+    border-radius: 50%;
+    border:none;
+    width: 4rem;
+    height: 4rem;
+    margin-inline:.5rem;   
+ }
+ button.slider-btn img{
+    margin: 0 auto;
+ }
+
+ h3{
+    text-align: center;
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-h3);
+ }
+
+ /* CTA */
+
+ .cta{
+    display: flex;
+   background-color: var(--clr-black);
+   height: 20rem;
+   border-radius: 10px;
+   padding: 5rem 6rem 5rem 4rem;
+   margin-top: 5.5rem;
+   align-items: center;
+   justify-content: space-between;
+ }
+
+ .cta-content{
+    max-width: 33.75rem;
+ }
+
+ .cta h2{
+    font-size: var(--fs-h2);
+    font-weight: var(--fw-bold);
+    color: var(--clr-neutral);
+    margin-bottom: 2.5rem;    
+ }
+
+ .cta p{
+    color: var(--clr-neutral)
+ }
+
+ /* Footer */
+
+ footer .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-block:3.5rem ; 
+}
