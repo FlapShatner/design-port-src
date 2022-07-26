@@ -11,5 +11,13 @@ new Glide('.glide', {
       perView: 2,
       peek: 50,
     },
+    1028: {
+      perView: 1,
+      peek: 175,
+    },
+    688: {
+      perView: 1,
+      peek: 37,
+    },
   },
 }).mount()

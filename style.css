@@ -28,13 +28,13 @@
     --fs-button:1rem;
 }
 
-@media (max-width: 64em){
+@media (max-width: 69em){
     :root{
         --fs-h1:2.75rem;
         --fs-h2:2rem;
     }
 }
-@media(max-width: 40em){
+@media(max-width: 43em){
     :root{
         --fs-h1:2.25rem;
         --fs-h2:1.625rem;
@@ -158,7 +158,7 @@ body{
 .container{
     max-width:1440px;
     margin: 0 auto;
-    padding-inline:10.25rem;
+    padding-inline:10%;
 }
 
 p{
@@ -185,6 +185,12 @@ button{
     background-color: var(--clr-gold);
 }
 
+@media(max-width: 69rem){
+    .container{
+        padding-inline: 2.5rem;
+    }
+}
+
 /* Header */
 
 header .container{
@@ -199,6 +205,8 @@ header .container{
 
 /* Heading */
 
+
+
 h1{
     font-size: var(--fs-h1);
     font-weight: var(--fw-bold);
@@ -208,7 +216,14 @@ h1{
 }
  .heading p{
     text-align: center;
-    padding: 0 13rem;
+    max-width: 65%;
+    margin: 0 auto;
+ }
+
+ @media(max-width:69rem){
+    .heading p{
+        max-width: 90%;
+    }
  }
 
  /* Grid */
@@ -269,6 +284,33 @@ h1{
     gap:1.5rem;
  }
 
+ @media (max-width:69rem){
+    .blocks{
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 182px 158px 182px;
+        grid-template-areas: 
+        'graphic graphic ui apps'
+        'graphic graphic illus illus'
+        'photo photo motion motion'
+        ;
+    }
+ }
+
+ @media(max-width:43rem){
+    .blocks{
+        grid-template-columns:(2, 1fr);
+        grid-template-rows: 182px 158px 182px 158px 182px 182px;
+        grid-template-areas: 
+        'graphic graphic graphic graphic'
+        'graphic graphic graphic graphic'
+        'ui ui apps apps'
+        'illus illus illus illus'
+        'photo photo photo photo'
+        'motion motion motion motion'
+        ;
+    }
+ }
+
  /* Banner */
 
  .banner{
@@ -296,6 +338,44 @@ h1{
 
  .banner-body p{
     padding-block: 2.5rem;
+ }
+
+ @media(max-width:73.75rem){
+    .photo{        
+        margin-left: -10%;
+    }
+ }
+
+ @media(max-width:56rem){
+    .photo{
+        max-width: 364px;
+        margin-left: -13%;
+    }
+ }
+
+ @media(max-width:43rem){
+    .banner{
+        padding-top: 1.25rem;
+        flex-direction: column;
+    }
+
+    .photo{
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .banner-body{
+        max-width: 85%;
+        text-align: center;
+        margin-top: 2.5rem;
+    }
+
+    .banner-body h2{
+        line-height: normal;
+    }
+    .banner-body p{
+        padding-block: 1.75rem;
+     }
  }
 
  /* Slider */
@@ -360,6 +440,21 @@ h1{
 
  .cta p{
     color: var(--clr-neutral)
+ }
+
+ @media(max-width:73.75rem){
+    .cta{
+        flex-direction: column;
+        text-align: center;
+        padding: 4.125rem;
+        height: max-content;
+    }
+    .cta h2{
+        margin-bottom: .5rem ;
+    }
+    .cta p{
+        margin-block: 2rem;
+    }
  }
 
  /* Footer */
